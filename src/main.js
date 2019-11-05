@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store' // 引入Vuex的中对象
 
 Vue.config.productionTip = false
 
@@ -10,6 +11,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store, // 在整个的Vue对象里面引入了集中的状态管理
   components: { App },
   template: '<App/>'
 })
